@@ -1,0 +1,137 @@
+html{
+	font-size: 24px;
+}
+body{
+	width: 100%;
+	/*display: table;*/
+	border-spacing: 10px;
+}
+p{
+	margin: 0;
+	padding: 0;
+}
+
+/************************OOCSS**********************************/
+
+.round{
+	border-radius: 10px;
+}
+.margin
+{
+	margin: .3em;
+}
+.padding{
+	padding: .3em
+}
+.center{
+	text-align: center;
+}
+/***********************************METODOLOGIA BEM**********************************/
+
+.header{
+	background: #F3FF35;
+	height: 2.5em;
+	/*display: table-caption;*/
+	/*caption-side: top;*/
+	margin: 10px 10px 0 10px;
+	position: relative;
+}
+	.header__text{
+		position: absolute;
+		top: 5px;
+	}
+.nav{
+	background: #F7852E;
+	/*display: table-cell;*/
+	position: relative;
+	width: 20%;
+	margin-top: 10px;
+}
+	.nav__text{
+		position: absolute;
+		/*top: 15px;*/
+		left: 30%;
+	}
+.main{
+	background: #E8EDE9;
+	/*display: table-cell;*/
+	width: 80%;
+	margin-top: 10px;
+	/*position: relative;*/
+}
+	.main__text{
+		/*position: absolute;*/
+		margin-top: 10px;
+	}
+	.main__article{
+		background: #cdeef7;
+		margin: 20px 40px;
+		padding-bottom: 10px;
+	}
+		.main__article__header{
+			background: #f2cdf4;
+			text-align: left;
+			padding-bottom: 5px;
+			margin: 0 15px;
+
+		}
+			.main__article__text--ContArt{
+				margin: 20px 0;
+				text-align: center;
+			}
+			.main__article__header__titulo{
+				background: #f7dfaf;
+				margin: 3px 15px;
+			}
+			.main__article__header__time{
+				background: #cdeef7;
+				margin: 5px 15px;
+			}
+		.main__article__footer{
+			background: #ffd089;
+			margin: 3px 15px;
+		}
+		.main__article__article{
+			background: #cef296;
+			margin: 3px 15px 3px 50px;
+			text-align: left;
+			padding-bottom: 10px;
+		}
+			.main__article__article__text--OtroComent{
+				text-align: center;
+			}
+			.main__article__article__time{
+				background: #f2cdf4;
+				text-align: center;
+				margin: 3px 10px;
+			}
+			.main__article__article__text--ContComent{
+				text-align: center;
+				margin: 10px 0;
+			}
+		.main__article__input{
+			background: #f4ec02;
+			margin: 0 15px;
+		}
+.footer{
+	background: #F2DEEF;
+	/*display: table-caption;*/
+	caption-side: bottom;
+	margin: 10px 10px 10px 10px;
+	height: 2.5em;
+}
+	.footer__text{
+		margin-top: 10px;
+	}
+
+@media screen and (max-width:550px){
+	html{
+		font-size: 16px;
+	}
+}
+
+@media screen and (min-width:551px) and (max-width:800px){
+	html{
+		font-size: 20px;
+	}
+}
